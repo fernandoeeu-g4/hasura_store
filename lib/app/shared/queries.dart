@@ -23,7 +23,7 @@ class Queries {
       }
     ''';
 
-    final String getProductsTypes = '''
+    static final String getProductsTypes = '''
       query productsType {
         product_type {
           id

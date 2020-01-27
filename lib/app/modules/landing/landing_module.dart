@@ -1,3 +1,4 @@
+import 'package:mobx_hasura/app/modules/add_product/add_product_module.dart';
 import 'package:mobx_hasura/app/modules/landing/widgets/app_indexed_stack/app_indexed_stack_controller.dart';
 import 'package:mobx_hasura/app/modules/home/home_module.dart';
 import 'package:mobx_hasura/app/modules/landing/landing_controller.dart';
@@ -15,6 +16,7 @@ class LandingModule extends ChildModule {
   List<Router> get routers => [
         Router('/', child: (_, args) => LandingPage()),
         Router('/home', module: HomeModule()),
+        Router('/teste', module: AddProductModule())
         // Router('')
       ];
 
